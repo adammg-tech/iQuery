@@ -27,7 +27,7 @@ iQuery is an independent third-party project. It is not affiliated with, endorse
 - **Official App Store Links:** Open an application's official App Store listing.
 - **Settings:** Configure available app preferences, including dynamic colors.
 
-- ## Screenshots
+## Screenshots
 
 <p align="center">
   <img src="fastlane/metadata/android/en-US/images/phoneScreenshots/1.png" width="30%">
