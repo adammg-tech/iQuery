@@ -1,0 +1,23 @@
+iQuery is an Android application for exploring Apple's App Store.
+
+FEATURES
+
+• Search for iOS applications by name or keyword.
+• Browse top free and paid applications.
+• Explore top free and paid games.
+• Discover new applications and games.
+• Browse apps and games by category.
+• View application details, descriptions, screenshots, ratings, and prices.
+• Read customer reviews and ratings.
+• Explore applications from individual developers.
+• Switch between 175 supported App Store storefronts.
+• Filter search results for iPhone-compatible applications.
+
+DATA SOURCES
+
+iQuery retrieves application information, charts, and customer reviews using Apple's public iTunes APIs.
+
+REQUIREMENTS
+
+Android 8.0 or later.
+Internet connection required.
