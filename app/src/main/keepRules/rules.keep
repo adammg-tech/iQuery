@@ -1,0 +1,49 @@
+# Comprehensive R8 / ProGuard Rules for iQuery Release Builds
+
+# Keep all attributes for serialization, reflection, and debugging
+-keepattributes *Annotation*,Signature,InnerClasses,EnclosingMethod,SourceFile,LineNumberTable
+
+# 1. Keep all app code, models, viewmodels, and UI components
+-keep class com.adammg.iquery.** { *; }
+-keepclassmembers class com.adammg.iquery.** { *; }
+-keepclassmembers class * extends androidx.lifecycle.ViewModel {
+    <init>(...);
+}
+
+# 2. Kotlinx Serialization
+-keep class kotlinx.serialization.** { *; }
+-keepclassmembers class kotlinx.serialization.** { *; }
+-keepclassmembers @kotlinx.serialization.Serializable class * {
+    ** Companion;
+    ** serializer(...);
+    <init>(...);
+}
+-keepclassmembers class * implements kotlinx.serialization.KSerializer { *; }
+-dontwarn kotlinx.serialization.**
+
+# 3. Retrofit & OkHttp & Okio
+-keep class retrofit2.** { *; }
+-keepclassmembers class retrofit2.** { *; }
+-keep interface retrofit2.** { *; }
+-keep class okhttp3.** { *; }
+-keepclassmembers class okhttp3.** { *; }
+-keep class okio.** { *; }
+-keepclassmembers class okio.** { *; }
+-dontwarn retrofit2.**
+-dontwarn okhttp3.**
+-dontwarn okio.**
+
+# 4. Coil Image Loading
+-keep class coil.** { *; }
+-keepclassmembers class coil.** { *; }
+-dontwarn coil.**
+
+# 5. Coroutines, Lifecycle, Navigation & Compose
+-keep class kotlinx.coroutines.** { *; }
+-keepclassmembers class kotlinx.coroutines.** { *; }
+-keep class androidx.lifecycle.** { *; }
+-keep class androidx.navigation.** { *; }
+-dontwarn kotlinx.coroutines.**
+-dontwarn androidx.lifecycle.**
+-dontwarn androidx.navigation.**
+-dontwarn androidx.compose.**
