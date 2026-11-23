@@ -6,10 +6,6 @@
 
 A native Android application for exploring Apple's App Store.
 
-<a align="center" href="https://rookieenough.github.io/Orion-Data/app/?id=iquery">
-  <img src="https://raw.githubusercontent.com/RookieEnough/Orion-Store/refs/heads/main/assets/orion-badge.png" alt="iQuery Banner" width="20%">
-</a>
-
 iQuery lets users search for iOS applications, browse app and game charts, view application details, and read customer reviews across different App Store storefronts.
 
 iQuery is an independent third-party project. It is not affiliated with, endorsed by, sponsored by, or officially connected to Apple Inc.
